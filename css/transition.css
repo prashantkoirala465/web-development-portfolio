@@ -1,0 +1,44 @@
+/* transition for preloader */
+
+
+.transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100000;
+    pointer-events: none;
+  }
+  
+  .transition-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(1);
+    transform-origin: top;
+    will-change: transform;
+  }
+  
+  .transition-overlay.overlay-1 {
+    background-color: var(--fg);
+  }
+  
+  .transition-overlay.overlay-2 {
+    background-color: var(--accent1);
+  }
+  
+  .transition-overlay.overlay-3 {
+    background-color: var(--accent2);
+  }
+  
+  .transition-overlay.overlay-4 {
+    background-color: var(--accent3);
+  }
+  
+  .transition-overlay.overlay-5 {
+    background-color: var(--accent4);
+  }
+  
