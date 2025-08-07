@@ -1,0 +1,98 @@
+{
+  "name": "lenis",
+  "version": "1.3.8",
+  "description": "How smooth scroll should be",
+  "type": "module",
+  "sideEffects": false,
+  "author": "darkroom.engineering",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkroomengineering/lenis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/darkroomengineering/lenis/issues"
+  },
+  "homepage": "https://github.com/darkroomengineering/lenis",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/darkroomengineering"
+  },
+  "keywords": [
+    "scroll",
+    "smooth",
+    "lenis",
+    "react",
+    "vue"
+  ],
+  "scripts": {
+    "build": "pnpm build:core && pnpm build:all",
+    "build:core": "tsup --config tsup.core.ts",
+    "build:all": "tsup",
+    "dev": "pnpm run -w --parallel /^dev:.*/",
+    "dev:build": "tsup --watch",
+    "dev:playground": "pnpm --filter playground dev",
+    "dev:nuxt": "pnpm --filter playground-nuxt dev",
+    "readme": "node ./scripts/update-readme.js",
+    "version:dev": "npm version prerelease --preid dev --force --no-git-tag-version",
+    "version:patch": "npm version patch --force --no-git-tag-version",
+    "version:minor": "npm version minor --force --no-git-tag-version",
+    "version:major": "npm version major --force --no-git-tag-version",
+    "postversion": "pnpm build && pnpm readme",
+    "publish:main": "npm publish",
+    "publish:dev": "npm publish --tag dev"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "terser": "^5.37.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "vue": ">=3.0.0",
+    "@nuxt/kit": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    },
+    "@nuxt/kit": {
+      "optional": true
+    }
+  },
+  "unpkg": "./dist/lenis.mjs",
+  "main": "./dist/lenis.mjs",
+  "module": "./dist/lenis.mjs",
+  "types": "./dist/lenis.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/lenis.d.ts",
+      "default": "./dist/lenis.mjs"
+    },
+    "./react": {
+      "types": "./dist/lenis-react.d.ts",
+      "default": "./dist/lenis-react.mjs"
+    },
+    "./snap": {
+      "types": "./dist/lenis-snap.d.ts",
+      "default": "./dist/lenis-snap.mjs"
+    },
+    "./vue": {
+      "types": "./dist/lenis-vue.d.ts",
+      "default": "./dist/lenis-vue.mjs"
+    },
+    "./nuxt": {
+      "default": "./dist/lenis-vue-nuxt.mjs"
+    },
+    "./nuxt/runtime/*": {
+      "default": "./dist/nuxt/runtime/*.mjs"
+    },
+    "./dist/*": "./dist/*"
+  }
+}
