@@ -18,13 +18,13 @@
   
   .hero .hero-header.hero-header-1 {
     position: relative;
-    transform: translateX(-20%);
+    transform: translateX(-2%);
     z-index: -1;
   }
   
   .hero .hero-header.hero-header-2 {
     position: relative;
-    transform: translateX(20%);
+    transform: translateX(10%);
     z-index: 2;
   }
   
