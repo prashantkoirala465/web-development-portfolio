@@ -77,6 +77,7 @@
     font-style: italic;
     font-display: swap;
   }
+  
   @font-face {
     font-family: "formula-condensed";
     src: url("/fonts/formula/PPFormula-CondensedBlack.ttf") format("truetype");
@@ -271,7 +272,7 @@
     font-display: swap;
   }
   
-@font-face {
+  @font-face {
     font-family: "supply-mono";
     src: url("/fonts/supply-mono/PPSupplyMono-Bold.ttf") format("truetype");
     font-weight: 700;
