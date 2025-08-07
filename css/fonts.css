@@ -271,3 +271,35 @@
     font-display: swap;
   }
   
+@font-face {
+    font-family: "supply-mono";
+    src: url("/fonts/supply-mono/PPSupplyMono-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "supply-mono";
+    src: url("/fonts/supply-mono/PPSupplyMono-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "supply-mono";
+    src: url("/fonts/supply-mono/PPSupplyMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "supply-mono";
+    src: url("/fonts/supply-mono/PPSupplyMono-Ultralight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
