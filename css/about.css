@@ -1,0 +1,243 @@
+/* about - hero */
+.about-hero {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  padding: 8em 2em 6em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+  color: var(--fg);
+  overflow: hidden;
+}
+
+.about-hero .about-hero-header {
+  text-align: center;
+}
+
+.about-hero .about-hero-header h1 {
+  font-size: 7.5rem;
+}
+
+.about-hero .about-hero-bio {
+  text-align: center;
+  width: 50%;
+}
+
+.about-hero .about-hero-portrait {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg);
+  width: 15%;
+  aspect-ratio: 5/7;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 0.25em solid var(--accent3);
+  outline: 0.25em solid var(--accent1);
+}
+
+.about-hero .about-hero-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* about - about copy */
+.about-copy {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  padding: 8em 2em 8em 2em;
+}
+
+.about-copy .about-copy-content {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent1);
+  border: 0.25em solid var(--fg);
+  border-radius: 1em;
+  padding: 3em 2em;
+  gap: 2em;
+}
+
+.about-copy .about-copy-content h3 {
+  font-weight: 400;
+}
+
+.about-copy .about-copy-content h3 span {
+  font-weight: 900;
+}
+
+.about-copy .tag {
+  position: absolute;
+  width: max-content;
+  background-color: var(--fg);
+  border-radius: 0.5em;
+}
+
+.about-copy .tag p {
+  text-transform: uppercase;
+  color: var(--bg);
+  font-size: 1rem;
+  padding: 0.75em 0.5em 0.5em 0.5em;
+}
+
+.about-copy #tag-1 {
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%) rotate(20deg);
+}
+
+.about-copy #tag-2 {
+  top: 65%;
+  left: 10%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.about-copy #tag-3 {
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%) rotate(5deg);
+}
+
+.about-copy #tag-4 {
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.about-copy #tag-5 {
+  top: 100%;
+  left: 80%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+/* about - skills */
+.skills {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 4em 2em 4em 2em;
+}
+
+.skills .skills-copy {
+  margin: 0 auto;
+  padding: 2em;
+  width: max-content;
+  text-align: center;
+  border: 0.2em dashed var(--fg);
+  border-radius: 1em;
+}
+
+/* about - stats */
+.stats {
+  padding: 8em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.stats .stats-row {
+  display: flex;
+  gap: 2em;
+}
+
+.stats .stats-header {
+  flex: 1;
+}
+
+.stats .stats-item-1 {
+  flex: 1;
+  background-color: var(--accent1);
+}
+
+.stats .stats-item-2 {
+  flex: 3;
+  background-color: var(--accent3);
+}
+
+.stats .stats-item-3 {
+  flex: 2;
+  background-color: var(--fg);
+  color: var(--bg);
+}
+
+.stats .stats-item-1,
+.stats .stats-item-2,
+.stats .stats-item-3 {
+  aspect-ratio: 16/7;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.stats .stats-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .about-hero {
+    padding: 8em 2em 4em 2em;
+  }
+
+  .about-hero .about-hero-header h1 {
+    font-size: 4rem;
+  }
+
+  .about-hero .about-hero-bio {
+    width: 100%;
+  }
+
+  .about-hero .about-hero-portrait {
+    width: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .about-hero .about-hero-portrait img {
+    position: absolute;
+    height: 110%;
+  }
+
+  .about-copy .about-copy-content {
+    width: 100%;
+  }
+
+  .about-copy .about-copy-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-copy .tag {
+    display: none;
+  }
+
+  .skills .skills-copy {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+  }
+
+  .stats .stats-row {
+    flex-direction: column;
+  }
+
+  .stats .stats-col {
+    width: 100%;
+    text-align: center;
+    gap: 4em;
+  }
+
+  .stats .stats-header {
+    gap: 2em;
+    margin-bottom: 2em;
+  }
+}
