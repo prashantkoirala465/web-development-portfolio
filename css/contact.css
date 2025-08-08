@@ -1,0 +1,83 @@
+/* contact - hero */
+.contact {
+    position: relative;
+    width: 100vw;
+    height: 100svh;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: var(--bg);
+    overflow: hidden;
+  }
+  
+  .contact .trail-img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 1em;
+    transform-origin: center;
+    pointer-events: none;
+    will-change: transform;
+  }
+  
+  .contact-card {
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .contact .contact-card-header-main {
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .contact .contact-card-header-main p {
+    width: 50%;
+  }
+  
+  .contact p.contact-card-header {
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+    width: max-content;
+    background-color: var(--fg);
+    color: var(--bg);
+  }
+  
+  .contact .contact-symbol {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1rem;
+  }
+  
+  @media (max-width: 1000px) {
+    .contact {
+      height: 100svh;
+      padding: 2em;
+      flex-direction: column;
+      text-align: center;
+      justify-content: flex-end;
+      gap: 4em;
+    }
+  
+    .contact .contact-card {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .contact .contact-card-header-main p {
+      width: 100%;
+    }
+  
+    .contact .contact-symbol {
+      display: none;
+    }
+  }
+  
