@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Prashant Koirala | Portfolio</title>
+    <link rel="icon" href="/images/global/site-icon.png" />
+    <link rel="stylesheet" href="/css/transition.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/globals.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <div class="transition">
+      <div class="transition-overlay overlay-1"></div>
+      <div class="transition-overlay overlay-2"></div>
+      <div class="transition-overlay overlay-3"></div>
+      <div class="transition-overlay overlay-4"></div>
+      <div class="transition-overlay overlay-5"></div>
+    </div>
+    <div class="page contact-page">
+      <nav>
+        <div class="logo">
+          <div class="logo-container">
+            <p class="mn"><a href="/">P ✦ K</a></p>
+          </div>
+        </div>
+      </nav>
+      <section class="contact trail-container">
+        <div class="floating-elements"></div>
+        <div class="contact-left">
+          <div class="contact-card-header-main">
+            <h1>Let's Connect</h1>
+            <p>
+              Got a project idea? Need a stunning website or a robust app? Or just want to geek out over code and design? I'm all in. Drop me a line, and let's create something extraordinary together.
+            </p>
+          </div>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <p class="label">Project Inquiries</p>
+              <p><a href="mailto:prashantkoirala465@gmail.com" target="_blank">prashantkoirala465@gmail.com</a></p>
+            </div>
+            <div class="contact-info-item">
+              <p class="label">Quick Chat</p>
+              <p><a href="https://x.com/arkynox_" target="_blank">@arkynox_</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <div class="form-header">
+            <h2>Start a Project</h2>
+            <p>Tell me about your vision and let's make it reality</p>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+                <label for="lastName">Last Name</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                <label for="email">Email Address</label>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                <label for="phone">Phone Number</label>
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <select id="projectType" name="projectType" required>
+                <option value="">Select project type</option>
+                <option value="website">Website Development</option>
+                <option value="webapp">Web Application</option>
+                <option value="mobileapp">Mobile Application</option>
+                <option value="ecommerce">E-commerce Platform</option>
+                <option value="redesign">Website Redesign</option>
+                <option value="consultation">Consultation</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="projectType">Project Type</label>
+            </div>
+            <div class="form-group full-width">
+              <textarea id="message" name="message" placeholder="Tell me about your project, goals, timeline, and budget..." required></textarea>
+              <label for="message">Project Details</label>
+            </div>
+            <button type="submit" class="submit-btn">
+              Send Message
+            </button>
+            <div class="success-message" id="successMessage">
+              <p>Thanks! Your message has been sent. I'll get back to you within 24 hours.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/js/transition.js"></script>
+    <script type="module" src="/js/contact.js"></script>
+  </body>
+</html>
