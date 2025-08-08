@@ -1,0 +1,192 @@
+/* navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    z-index: 100;
+  }
+  
+  nav .logo {
+    padding: 0.5em 0.65em;
+    background-color: var(--fg);
+  }
+  
+  nav .logo a {
+    color: var(--bg);
+    user-select: none;
+  }
+  
+  nav .menu-toggle-btn {
+    padding: 0.6em 0.65em 0.65em 0.65em;
+    background-color: var(--bg2);
+    color: var(--fg);
+  }
+  
+  nav .menu-toggle-btn.menu-open {
+    background-color: var(--fg);
+    color: var(--bg);
+  }
+  
+  nav .menu-toggle-btn p {
+    user-select: none;
+  }
+  
+  nav .logo,
+  nav .menu-toggle-btn {
+    border-radius: 0.4em;
+    cursor: pointer;
+  }
+  
+  nav .menu-toggle-btn-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 0.875rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  /* nav - overlay */
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100svh;
+    background-color: var(--bg2);
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 10;
+  }
+  
+  .nav-overlay .nav-items {
+    position: absolute;
+    top: 47.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .nav-overlay .nav-items .nav-item {
+    position: relative;
+    transform: translateY(100%);
+    will-change: transform;
+    opacity: 0;
+    border-radius: 0.5em;
+    background-color: var(--bg);
+  }
+  
+  .nav-overlay .nav-items .nav-item p {
+    font-size: 2rem;
+    user-select: none;
+  }
+  
+  .nav-overlay .nav-items .nav-item.active {
+    background-color: var(--fg);
+  }
+  
+  .nav-overlay .nav-items .nav-item.active p a {
+    color: var(--bg);
+  }
+  
+  .nav-overlay .nav-items .nav-item p a {
+    display: block;
+    padding: 0.5em 0.5em 0.3em 0.5em;
+  }
+  
+  .nav-overlay .nav-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    gap: 1.5em;
+  }
+  
+  .nav-overlay .nav-footer .nav-footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .nav-overlay .nav-footer .nav-footer-item p {
+    font-size: 0.75rem;
+    user-select: none;
+  }
+  
+  .nav-overlay .nav-footer .nav-footer-item .nav-footer-item-header {
+    position: relative;
+    transform: translateY(100%);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.75em;
+  }
+  
+  .nav-overlay .nav-footer .nav-footer-item .nav-footer-item-header p {
+    background-color: var(--bg);
+    color: var(--fg);
+    padding: 0.5em 0.65em;
+    border-radius: 0.4em;
+    text-align: center;
+  }
+  
+  .nav-overlay .nav-footer .nav-footer-item .nav-footer-item-copy {
+    position: relative;
+    transform: translateY(100%);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.75em;
+  }
+  
+  .nav-overlay .nav-footer-item:nth-child(1) .nav-footer-item-header {
+    justify-content: flex-start;
+  }
+  
+  .nav-overlay .nav-footer-item:nth-child(3) .nav-footer-item-header {
+    justify-content: flex-end;
+  }
+  
+  .nav-overlay .nav-footer .nav-footer-item:last-child {
+    margin-top: 1em;
+  }
+  
+  @media (max-width: 1000px) {
+    .nav-overlay .nav-items .nav-item p {
+      font-size: 1.5rem;
+    }
+  
+    .nav-overlay .nav-footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .nav-overlay .nav-footer-item:nth-child(1) .nav-footer-item-header {
+      justify-content: center;
+    }
+  
+    .nav-overlay .nav-footer-item:nth-child(2) {
+      display: none;
+    }
+  
+    .nav-overlay .nav-footer-item:nth-child(3) .nav-footer-item-header {
+      justify-content: center;
+    }
+  }
+  
