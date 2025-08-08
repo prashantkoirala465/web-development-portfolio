@@ -1,4 +1,4 @@
-// Cheatsheet: GSAP ScrollTrigger Featured Work Animation Code
+// featured-work.js
 
 // Import GSAP and ScrollTrigger plugin
 import gsap from "gsap";
