@@ -2,8 +2,7 @@
     "buildCommand": "npm run build",
     "outputDirectory": "dist",
     "rewrites": [
-      { "source": "/about", "destination": "/about.html" },
-      { "source": "/contact", "destination": "/contact.html" }
+
     ]
   }
   
